@@ -25,7 +25,11 @@ const verifyPalindrome = (string) => {
   return reverseString === normalizedString;
 };
 
-verifyPalindrome();
+// verifyPalindrome();
+
+console.log(verifyPalindrome("A man a plan a canal Panama")); // true
+console.log(verifyPalindrome("Hello")); // false
+
 
 // --------------------------------------------------------------------------------------
 
@@ -41,7 +45,11 @@ const extractNumbers = (string) => {
   return result === '' ? NaN : Number(result);
 };
 
-extractNumbers();
+// extractNumbers();
+
+console.log(extractNumbers("abc123")); // 123
+console.log(extractNumbers("no numbers")); // NaN
+console.log(extractNumbers("3 cats and 4 dogs")); // 34
 
 function stringToNumber(str) {
   return Number(
@@ -49,4 +57,8 @@ function stringToNumber(str) {
   );
 }
 
-stringToNumber();
+// stringToNumber();
+
+console.log(stringToNumber("abc123")); // 123
+console.log(stringToNumber("no numbers")); // NaN
+console.log(stringToNumber("3 cats and 4 dogs")); // 34
